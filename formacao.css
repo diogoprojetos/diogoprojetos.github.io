@@ -1,0 +1,180 @@
+.formacao {
+  background-color: rgb(37, 37, 37);
+  margin-top: 60px;
+}
+
+.formacao-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 40px 20px;
+  width: 1100px;
+  margin: 0px 0px 0px 160px;
+  gap: 210px;
+}
+
+.formacao .subtitulo {
+  color: black;
+}
+
+.formacao-texto {
+  font-size: 1.3rem;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+
+  font-family: "fire_sans-regular";
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.faculdade {
+  flex: 1;
+  background-color: black;
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-lista {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faculdade-tipo {
+  font-family: "fire_sans-regular";
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso {
+  flex: 1;
+  word-break: break-all;
+  font-family: "fire_sans-bold";
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.faculdade-instituicao {
+  font-family: "fire_sans-regular";
+  color: #a3a3a3;
+}
+
+.faculdade-curso::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  display: block;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 4px;
+  left: -32px;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-top: 40px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  font-family: "fire_sans-bold";
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  object-fit: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -6px;
+  left: -36px;
+  background-image: url("/img/cursos.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.idiomas h3::before {
+  content: "";
+  display: block;
+  object-fit: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -6px;
+  left: -36px;
+  background-image: url("/img/idiomas.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.formacao-extra li {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: "fire_sans-regular";
+}
+
+.formacao-extra span {
+  font-family: "fire_sans-regular";
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 20px 60px 20px;
+  width: 1000px;
+  margin: 0px 0px 0px 160px;
+  gap: 210px;
+  font-family: "fire_sans-regular";
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: white;
+}
+
+.footer-contato li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer-contato li a {
+  color: white;
+}
+
+.footer-copy {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  grid-column: 1/-1;
+}

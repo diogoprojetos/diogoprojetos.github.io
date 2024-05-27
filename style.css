@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url("/formacao.css");
+@font-face {
+  font-family: "fire_sans-bold";
+  src: url("/Fira_Sans/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: "fire_sans-regular";
+  src: url("/Fira_Sans/FiraSans-Regular.ttf");
+}
+
+body {
+  padding: 0px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  font-family: "fire_sans-regular";
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.introducao {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+  margin-bottom: 40px;
+  align-items: center;
+  position: relative;
+  align-items: center;
+}
+
+.introducao img {
+  max-width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.introducao span img {
+  position: absolute;
+  object-fit: contain;
+  top: -120px;
+  right: 420px;
+  width: 100px;
+  z-index: -1;
+}
+
+.introducao h1 {
+  font-family: "fire_sans-bold";
+  font-size: 4rem;
+  color: #141414;
+}
+
+/* margin top ok, possa ser que tenha nas outras direções. */
+.introducao p {
+  font-family: "fire_sans-regular";
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #525252;
+}
+
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px 40px 20px;
+
+  gap: 260px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.subtitulo {
+  font-family: "fire_sans-bold";
+  font-size: 7rem;
+  color: #e0e0e0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.experiencia-texto {
+  font-size: 1.3rem;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+  font-family: "fire_sans-regular";
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: #f5f5f5;
+  gap: 20px 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.empresa::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  display: block;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-titulo {
+  font-size: 1.2rem;
+  font-family: "fire_sans-bold";
+}
+
+.empresa-ano {
+  width: 80px;
+  text-align: right;
+  top: 20px;
+  left: -100px;
+  position: absolute;
+  font-size: 0.875rem;
+  font-family: "fire_sans-regular";
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4rem;
+  font-family: "fire_sans-regular";
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  background-color: #ffff;
+  border-radius: 4px;
+  font-family: "fire_sans-regular";
+  padding: 5px 10px;
+}
